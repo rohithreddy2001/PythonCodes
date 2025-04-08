@@ -1,5 +1,5 @@
 '''
-pattern for linked_list is:
+pattern/steps for linked_list is:
 1st creating a class Node
 2nd creating a class Linkedlist
 3rd creating Nodes
