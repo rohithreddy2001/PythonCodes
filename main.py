@@ -218,11 +218,10 @@ scorecard = ["India|300", "Australia|240", "South Africa|245", "Newzealand|267",
 scorecard.append("Srilanka|257")
 # Create a dictionary from the scorecard
 score_dict = {entry.split('|')[0]: int(entry.split('|')[1]) for entry in scorecard}
+print(score_dict)
 for team, score in score_dict.items():
     print(f"{team} : {score}")
 
-# for card in scorecard:
-#     print(card.split("|"))
 
 
 
