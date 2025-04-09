@@ -214,7 +214,7 @@
 #
 # guess_game()
 
-scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6"]
+scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6", "WestIndies|270|10"]
 scorecard.append("Srilanka|257|9")
 scorecard.append("Afganisthan|255|7")
 scorecard.append("Bangladesh|239|9")
