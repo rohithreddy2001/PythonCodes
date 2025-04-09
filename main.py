@@ -214,10 +214,10 @@
 #
 # guess_game()
 
-scorecard = ["India|300", "Australia|240", "South Africa|245", "Newzealand|267", "England|285"]
-scorecard.append("Srilanka|257")
+scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6"]
+scorecard.append("Srilanka|257|9")
 # Create a dictionary from the scorecard
-score_dict = {entry.split('|')[0]: int(entry.split('|')[1]) for entry in scorecard}
+score_dict = {entry.split('|')[0]: (entry.split('|')[1] + '/' + (entry.split('|'))[2]) for entry in scorecard}
 print(score_dict)
 for team, score in score_dict.items():
     print(f"{team} : {score}")
