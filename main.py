@@ -216,6 +216,7 @@
 
 scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6"]
 scorecard.append("Srilanka|257|9")
+scorecard.append("Afganisthan|255|7")
 # Create a dictionary from the scorecard
 score_dict = {entry.split('|')[0]: (entry.split('|')[1] + '/' + (entry.split('|'))[2]) for entry in scorecard}
 print(score_dict)
