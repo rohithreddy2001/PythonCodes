@@ -214,20 +214,32 @@
 #
 # guess_game()
 
-scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6", "WestIndies|270|10"]
-scorecard.append("Srilanka|257|9")
-scorecard.append("Afganisthan|255|7")
-scorecard.append("Bangladesh|239|9")
-scorecard.append("Pakistan|200|10")
-# Create a dictionary from the scorecard
-score_dict = {entry.split('|')[0]: (entry.split('|')[1] + '/' + (entry.split('|'))[2]) for entry in scorecard}
-print(score_dict)
-for team, score in score_dict.items():
-    print(f"{team} : {score}")
+# scorecard = ["India|300|8", "Australia|240|9", "South Africa|245|7", "Newzealand|267|9", "England|285|6", "WestIndies|270|10"]
+# scorecard.append("Srilanka|257|9")
+# scorecard.append("Afganisthan|255|7")
+# scorecard.append("Bangladesh|239|9")
+# scorecard.append("Pakistan|200|10")
+# # Create a dictionary from the scorecard
+# score_dict = {entry.split('|')[0]: (entry.split('|')[1] + '/' + (entry.split('|'))[2]) for entry in scorecard}
+# print(score_dict)
+# for team, score in score_dict.items():
+#     print(f"{team} : {score}")
 
 
+# write a python code for finding the maximum and minimum number from a list
+def find_max_min(numbers):
+    if not numbers:
+        return None, None
+    max_num = numbers[0]
+    min_num = numbers[0]
+    for num in numbers:
+        if num > max_num:
+            max_num = num
+        if num < min_num:
+            min_num = num
+    return max_num, min_num
 
-
-
-
-
+numbers = [3, 5, 1, 8, 2]
+max_num, min_num = find_max_min(numbers)
+print("Maximum number:", max_num)
+print("Minimum number:", min_num)
